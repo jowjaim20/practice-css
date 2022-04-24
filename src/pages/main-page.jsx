@@ -2,13 +2,14 @@ import "./main-page.scss";
 
 import React from "react";
 import Header from "../components/Header";
+import Navbar from "../layouts/Navbar";
 
 function MainPage() {
   return (
     <div className="container">
       <Header />
       <div className="content">
-        <nav className="sidebar">navigation</nav>
+        <Navbar />
         <main className="hotel-view">Hotel View</main>
       </div>
     </div>

@@ -59,23 +59,52 @@
 }
 
 .user-nav {
+  align-self: stretch;
+
   display: flex;
   align-items: center;
+
+  & > * {
+    padding: 0 2rem;
+    cursor: pointer;
+    align-items: center;
+  }
+  & > *:hover {
+    background-color: var(--color-grey-light-2);
+  }
   &__icon-box {
+    align-self: stretch;
+    display: flex;
+    position: relative;
   }
   &__icon {
     height: 2.25rem;
     width: 2.25rem;
+    fill: var(--color-grey-dark-2);
   }
   &__notification {
+    font-size: 0.8rem;
+    height: 1.75rem;
+    width: 1.75rem;
+    border-radius: 100px;
+    background-color: var(--color-primary);
+    color: #fff;
+    position: absolute;
+    top: 0.5rem;
+    right: 1rem;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
   &__user {
+    align-self: stretch;
+    display: flex;
   }
   &__user-photo {
     height: 3.75rem;
     width: 3.75rem;
     border-radius: 50%;
-  }
-  &__user-name {
+    margin-right: 1rem;
   }
 }
