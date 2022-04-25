@@ -3,6 +3,7 @@ import "./main-page.scss";
 import React from "react";
 import Header from "../components/Header";
 import Navbar from "../layouts/Navbar";
+import HotelOverview from "../layouts/HotelOverview/HotelOverview";
 
 function MainPage() {
   return (
@@ -10,7 +11,7 @@ function MainPage() {
       <Header />
       <div className="content">
         <Navbar />
-        <main className="hotel-view">Hotel View</main>
+        <HotelOverview />
       </div>
     </div>
   );
